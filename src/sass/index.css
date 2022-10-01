@@ -34,16 +34,17 @@ img {
 }
 
 .search-form {
-  width: 100%;
-  background: linear-gradient(90deg, #050b5c, #1a73e8);
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0;
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0 3px 5px rgba(0, 4, 56, 0.5);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  background: #34e89e;
+  background: linear-gradient(90deg, #0f3443, #34e89e);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .finished {
