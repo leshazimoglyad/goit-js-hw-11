@@ -1,4 +1,4 @@
-import PixabayImages from './fetch-gallerry';
+import pixabayImages from './fetch-gallerry';
 import { pixabayImages } from '../index';
 import { gallery } from '../index';
 import Notiflix from 'notiflix';
