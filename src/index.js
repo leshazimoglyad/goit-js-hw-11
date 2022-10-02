@@ -14,6 +14,7 @@ const refs = {
   searchImagesInput: document.querySelector('.gallery-input'),
   searchForm: document.querySelector('.search-form'),
   sentinel: document.querySelector('.sentinel'),
+  loadMoreBtn: document.querySelector('.load-more'),
 };
 
 const { searchImagesInput, searchForm, sentinel } = refs;
@@ -50,6 +51,19 @@ const options = {
 
 const observer = new IntersectionObserver(onEntry, options);
 observer.observe(sentinel);
+
+loadMoreBtn.addEventListener('click', onClickLoadMoreBtn);
+
+async function onClickLoadMoreBtn() {
+  currentPage += 1;
+  const response = await fetchImages(searchQuery, currentPage);
+  renderCardImage(response.hits);
+  lightbox.refresh();
+  currentHits += response.hits.length;
+
+  
+  
+}
 // console.log(sentinel);
 // const lightbox = new SimpleLightbox('.photo-card a', {
 //   captions: true,
