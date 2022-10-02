@@ -42,9 +42,30 @@ img {
     align-items: center;
     justify-content: center;
     padding: 25px 0;
-    background: #34e89e;
-    background: linear-gradient(90deg,#0f3443,#34e89e);
+    background: #e83434;
+    background: linear-gradient(90deg,#0f3443,#e86134);
     box-shadow: 0 3px 5px 0 rgb(0 0 0 / 50%);
+    
+}
+.gallery-input{ 
+  width: 190px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius:5px;
+}
+.button-input{
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius:5px;
 }
   .finished {
   background: rgb(255,255,255);
